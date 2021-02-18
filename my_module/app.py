@@ -2,11 +2,15 @@ from flask import Flask, render_template, request
 from my_module.models import DB, User
 from my_module.twitter import add_or_update_user
 from my_module.predict import predict_user
+import logging
 
 
 def create_app():
 
     app = Flask(__name__)
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
 
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite3"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -41,5 +45,3 @@ def create_app():
 
 app = create_app()
 
-if __name__ == '__main__':
-    app.run()

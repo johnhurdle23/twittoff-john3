@@ -45,3 +45,4 @@ urllib3
 wasabi
 Werkzeug
 zipp
+gunicorn
