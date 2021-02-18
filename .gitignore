@@ -1,3 +1,4 @@
 *.sqlite3
 my_model/*
 venv/*
+.idea
