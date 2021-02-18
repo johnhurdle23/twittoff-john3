@@ -32,7 +32,7 @@ scikit-learn
 scipy
 six
 smart-open
-spacy
+spacy==2.3.5
 spacy-legacy
 SQLAlchemy
 srsly
