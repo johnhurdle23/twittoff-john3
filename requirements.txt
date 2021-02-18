@@ -6,6 +6,7 @@ click
 cymem
 Flask
 Flask-SQLAlchemy
+gunicorn
 idna
 importlib-metadata
 itsdangerous
@@ -31,7 +32,7 @@ scikit-learn
 scipy
 six
 smart-open
-spacy==2.3.5
+spacy
 spacy-legacy
 SQLAlchemy
 srsly
@@ -45,4 +46,3 @@ urllib3
 wasabi
 Werkzeug
 zipp
-gunicorn
