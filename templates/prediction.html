@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitOff - {{ title }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/picnic" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="brand"><span>TwitOff!</span></a>
+
+      <!-- responsive-->
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">Menu</label>
+
+      <div class="menu">
+        <a href="/update" class="button warning">Update Tweets</a>
+        <a href="/reset" class="button error">Reset Database</a>
+      </div>
+    </nav>
+
+    <div id="prediction_message">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>{{ message }}</p>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/umbrellajs"/> -->
+  </body>
+</html>
